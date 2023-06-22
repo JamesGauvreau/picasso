@@ -1,0 +1,85 @@
+.system {
+    position:absolute;
+    height: 50vh;
+    width: 50vh;
+    background-color: aqua;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 1;
+}
+
+.planet {
+    position:absolute;
+    bottom:30%;
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+  }
+
+.moon {
+    position:absolute;
+    height: 25%;
+    width: 25%;
+    background-color: seagreen;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 3;
+}
+
+.peasant {
+    display:grid;
+    height: 15vh;
+    width: 100%;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    z-index: 1;
+    padding:0;
+}
+
+.peasant-hull {
+    background-color: red;
+    width:3vh;
+    z-index: 2;
+}
+
+.peasant-missing {
+    background-color: transparent;
+    width:3vh;
+    z-index: 2;
+    margin-bottom: 2vh;
+}
+
+.fragments {
+    background-color: red;
+    z-index: 3;
+    width:3vh;
+    margin-bottom: 2vh;
+}
+
+
+.blacksun-head {
+    position:absolute;
+    top:500vh;
+    height: 150vh;
+    width: 150%;
+    background-color: black;
+    border-radius: 100%;
+    transform:translate(-5%, -60%);
+    z-index: 1;
+  } 
+
+
+.blacksun-body {
+    position:absolute;
+    height: 1300vh;
+    width: 110%;
+    background-color: black;
+    transform:translate(-5%, -60%);
+    z-index: 999;
+  } 
+
+body {
+    min-height: 10000vh
+}
