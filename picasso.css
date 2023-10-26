@@ -29,33 +29,20 @@
     z-index: 3;
 }
 
-.peasant {
-    display:grid;
-    height: 15vh;
-    width: 100%;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
-    z-index: 1;
-    padding:0;
+table {
+    margin:2vh;
+    border-spacing: 0;
 }
 
-.peasant-hull {
+th, td {
     background-color: red;
-    width:3vh;
-    z-index: 2;
+    height: 2vh;
+
+    width: 10vh;
 }
 
-.peasant-missing {
-    background-color: transparent;
-    width:3vh;
-    z-index: 2;
-    margin-bottom: 2vh;
-}
-
-.fragments {
-    background-color: red;
-    z-index: 3;
-    width:3vh;
-    margin-bottom: 2vh;
+.missing {
+    background-color:transparent
 }
 
 
@@ -74,12 +61,16 @@
 .blacksun-body {
     position:absolute;
     height: 1300vh;
-    width: 110%;
+    width: 99%;
+    overflow:clip;
     background-color: black;
-    transform:translate(-5%, -60%);
+    transform:translate(0%, -60%);
     z-index: 999;
   } 
 
 body {
-    min-height: 10000vh
+    min-height: 10000vh;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    background-color: black,
 }
